@@ -1,0 +1,40 @@
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+
+    <tag>
+        <name>printmedialist</name>
+        <tag-class>custometags.PrintMediaListToJsp</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>list</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <name>printMedia</name>
+        <tag-class>custometags.GetMediaOfDifferentCategory</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>category</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    
+    <tag>
+    
+    	<name>printBigBanner</name>
+    	<tag-class>custometags.GetBigBannerForIndexPage</tag-class>
+    	<body-content>empty</body-content>
+    
+    </tag>
+	
+</taglib>

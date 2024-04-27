@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+  <listener>
+  	<listener-class>listener.MyListener</listener-class>
+  </listener>
+  
+  <context-param>
+  	<param-name>adminPassword</param-name>
+  	<param-value>admin@32212%$%</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>adminEmail</param-name>
+  	<param-value>admin@gmail.com</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>driver</param-name>
+  	<param-value>com.mysql.cj.jdbc.Driver</param-value>
+  </context-param>
+  
+  <context-param>
+	<param-name>profilePath</param-name>  
+	<param-value>F:\OTT\ott-project-3\OTT-01\src\main\webapp\userprofiles</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>url</param-name>
+  	<param-value>jdbc:mysql://localhost:3306/new_ott</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>username</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>password</param-name>
+  	<param-value>admin</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>commonPath</param-name>
+  	<param-value>F:\OTT\ott-project-3\OTT-01\src\main\webapp\media</param-value>
+  </context-param>
+  
+  
+  <servlet>
+  
+  	<servlet-name>controllers.SendIndexPageControllerServlet</servlet-name>
+  	<servlet-class>controllers.SendIndexPageControllerServlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  
+  	<servlet-name>controllers.SendIndexPageControllerServlet</servlet-name>
+  	<url-pattern>/Send-Index-Page</url-pattern>
+  
+  </servlet-mapping>
+  
+    
+  <servlet>
+  
+  	<servlet-name>controllers.AddContentIntoUsersWatchListControllerServlet</servlet-name>
+  	<servlet-class>controllers.AddContentIntoUsersWatchListControllerServlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  
+  	<servlet-name>controllers.AddContentIntoUsersWatchListControllerServlet</servlet-name>
+  	<url-pattern>/add-media-to-watchlist</url-pattern>
+  
+  </servlet-mapping>
+
+</web-app>
